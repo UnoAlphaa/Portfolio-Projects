@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./DSC_8343.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.main-width{
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo i{
+    height: 55px;
+    width: 55px;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav .humb{
+    width: 35px;
+    height: 24px;
+    background: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 60px;
+    display: none;
+}
+nav .humb span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #2ecc71;
+    transition: .3s;
+    transition-property: transform,opacity;
+}
+nav .humb span:nth-child(2){
+    margin: 7px 0;
+}
+nav .nav-list li{
+    display: inline-block;
+    list-style: none;
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #fff;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav .nav-list li:not(:last-child) a:hover{
+    color: #2ecc71;
+    transition: .4s;
+}
+
+nav .nav-list li.btn a{
+    display: inline-block;
+    background: transparent;
+    padding: 10px 28px;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #2ecc71;
+}
+nav .nav-list li.btn a:hover{
+    background: #2ecc71;
+    border: 2px solid transparent;
+    color: #fff;
+    transform: scale(1.2);
+    transition: .4s;
+}
+.container{
+    padding-top: 150px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 15px 0 20px;
+}
+.container .hero-text h1 span{
+    color: #2ecc71;
+}
+.container .hero-text h3{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 900;
+}
+.container .hero-text p{
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.socials i{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(225,225,225,0.1);
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.socials i:hover{
+    background: #2ecc71;
+    transform: scale(1.2);
+    transition: .4s;
+}
+.container .hero-text button{
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: #2ecc71;
+    margin-top: 30px;
+    font-weight: 500;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    color: #2ecc71;
+    transform: scale(1.2);
+    transition: .6s;
+}
+.bottom{
+    margin-top: 60px;
+}
+.bottom p{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.bottom p span{
+    color: #2ecc71;
+    font-weight: 500;
+}
